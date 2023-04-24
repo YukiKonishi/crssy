@@ -25,7 +25,7 @@ Konishi Yuki
 ## ライセンス
 ![](https://img.shields.io/github/license/YukiKonishi/crssy)
 ## アイコン
-
+![](docs/static/weather-news.png)
 ## 名前の由来
 
 ## バージョン履歴
