@@ -23,7 +23,7 @@ OPTIONS
 ## 開発者
 Konishi Yuki
 ## ライセンス
-![]https://img.shields.io/github/license/YukiKonishi/crssy
+![](https://img.shields.io/github/license/YukiKonishi/crssy)
 ## アイコン
 
 ## 名前の由来
