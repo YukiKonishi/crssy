@@ -1,9 +1,12 @@
 # crssy
 ターミナル上に天気予報を出力するCLI
 
+[![build](https://github.com/YukiKonishi/crssy/actions/workflows/build.yml/badge.svg)](https://github.com/YukiKonishi/crssy/actions/workflows/build.yml)
 [![Coverage Status](https://coveralls.io/repos/github/YukiKonishi/crssy/badge.svg?branch=main)](https://coveralls.io/github/YukiKonishi/crssy?branch=main)
 [![codebeat badge](https://codebeat.co/badges/e1177bcd-c6fd-4e16-9c94-6db128b394cb)](https://codebeat.co/projects/github-com-yukikonishi-crssy-main)
 [![Go Report Card](https://goreportcard.com/badge/github.com/YukiKonishi/crssy)](https://goreportcard.com/report/github.com/YukiKonishi/crssy)
+![Version](https://img.shields.io/badge/Version-0.1.16-informational)
+
 
 # 概要
 このソフトウェアは天気予報をブラウザで調べるよりも手軽に確認できるようにするために，
