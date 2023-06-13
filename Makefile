@@ -4,7 +4,7 @@ NAME := crssy
 DIST := $(NAME)-$(VERSION)
 
 crssy: coverage.out
-	go build -o crssy $(PACKAGE_LIST)
+	go build -o crssy cmd/crssy/main.go
 
 coverage.out:
 	go test -covermode=count \
