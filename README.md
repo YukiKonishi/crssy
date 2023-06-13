@@ -32,7 +32,7 @@ Konishi Yuki
 ## ライセンス
 ![](https://img.shields.io/github/license/YukiKonishi/crssy)
 ## アイコン
-![](docs/static/weather-news.png)
+![](pictures/static/weather-news.png)
 ## 名前の由来
 天気予報のソフトウェアを作るにあたって名前は何がいいかなと考えました．
 

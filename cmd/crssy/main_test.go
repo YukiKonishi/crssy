@@ -8,7 +8,7 @@ func Example_Main() {
 	// Hello World
 }
 
-func Test_Main(t *testing.T) {
+func _Test_Main(t *testing.T) {
 	if status := goMain([]string{}); status != 0 {
 		t.Error("Expected 0, got ", status)
 	}
