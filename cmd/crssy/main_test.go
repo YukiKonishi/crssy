@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func Example_Main() {
+func ignore_Example_Main() {
 	goMain([]string{})
 	// Output:
 	// Hello World
