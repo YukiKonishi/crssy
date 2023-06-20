@@ -3,6 +3,7 @@ package crssy
 import (
 	_ "embed"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"strconv"
 )
@@ -19,25 +20,37 @@ type City struct {
 	Longitude float64 `json:"-"`
 }
 
-func WeatherTemplate(args []string) int {
+func findCity(cityName string, cities []*City) (*City, error) {
+	//件数をプリントしている
+	//fmt.Printf("read %d entries\n", len(cities))
+	for i := 0; i < len(cities); i++ {
+		if cityName == cities[i].Name {
+			return cities[i], nil
+		}
+	}
+	return nil, fmt.Errorf("%s: city not found", cityName)
+}
+
+func WeatherTemplate(args []string) ([]*City, error) {
 	cities := []*City{}
 	err := json.Unmarshal(citiesJson, &cities)
 	if err != nil {
-		fmt.Println(err.Error())
-		return 1
+		return nil, err
 	}
+	fmt.Printf("load %d cities\n", len(cities))
 	for _, city := range cities {
 		city.Latitude, _ = strconv.ParseFloat(city.Lat, 64)
 		city.Longitude, _ = strconv.ParseFloat(city.Lng, 64)
 	}
-	//件数をプリントしている
-	//fmt.Printf("read %d entries\n", len(cities))
-	for i := 0; i < len(cities); i++ {
-		if args[1] == cities[i].Name {
-			//一致した場所の国名，名前，緯度経度を返す
-			fmt.Printf("Country: %s, Name: %s, Latitude: %f, Longitude: %f\n", cities[i].Country, cities[i].Name, cities[i].Latitude, cities[i].Longitude)
-			MakeUrl(cities[i].Latitude, cities[i].Longitude)
+	var results []*City
+	var errs []error
+	for _, name := range args {
+		city, err := findCity(name, cities)
+		if err == nil {
+			results = append(results, city)
+		} else {
+			errs = append(errs, err)
 		}
 	}
-	return 2
+	return results, errors.Join(errs...)
 }
