@@ -1,0 +1,5 @@
+baseURL = "https://YukiKonishi.github.io/crssy/" 
+languageCode = "ja-JP"
+title = "crssy"
+theme = "hugo-theme-docdock"
+defaultContentLanguage = "ja"

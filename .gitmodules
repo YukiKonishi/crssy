@@ -1,0 +1,6 @@
+[submodule "docs/themes/toha"]
+	path = docs/themes/toha
+	url = https://github.com/hugo-toha/toha
+[submodule "docs/themes/hugo-theme-docdock"]
+	path = docs/themes/hugo-theme-docdock
+	url = https://github.com/vjeantet/hugo-theme-docdock.git
