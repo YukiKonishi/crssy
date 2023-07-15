@@ -36,10 +36,10 @@ func (e *CrssyError) Error() string {
 // ヘルプメッセージ
 func helpMessage(args string) string {
 	return fmt.Sprintf(`%s [OPTIONS]
-	OPTIONS
+	OPTIgitONS
+		<LOCATION>   	引数に場所を指定をし，出力で指定した場所の天気を返す．
 		-v, --version 			バージョンを表示し，修了します.
 		-h, --help 			このメッセージを表示し，修了します.
-		-l, --location <LOCATION>   	引数に場所を指定をし，出力で指定した場所の天気を返す．
 		-w, --week <WEEK>   	    	出力で週の天気を返す.`, args)
 }
 
@@ -67,6 +67,18 @@ func buildOptions(args []string) (*options, *flag.FlagSet) {
 // 引数に何も与えられていない時
 func perform(opts *options, args []string) *CrssyError {
 	//fmt.Println("Hello World")
+	if len(args) == 0 {
+		fmt.Println(helpMessage("crssy"))
+		return &CrssyError{statusCode: 0, message: ""}
+	}
+	city, err := crssy.FindCity(args[0])
+	if err != nil {
+		return &CrssyError{statusCode: 0, message: err.Error()}
+	}
+	// fmt.Println(city)
+	weathercode, err := crssy.ExpectWeather(city)
+	weather, err := crssy.Translateweather(weathercode.Weathercode[0])
+	fmt.Println(weathercode.Time[0], weather)
 	return nil
 }
 
@@ -88,7 +100,6 @@ func parseOptions(args []string) (*options, []string, *CrssyError) {
 
 // main関数
 func goMain(args []string) int {
-	crssy.WeatherTemplate(args)
 	opts, args, err := parseOptions(args)
 	if err != nil {
 		if err.statusCode != 0 {
