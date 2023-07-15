@@ -4,8 +4,6 @@ import "testing"
 
 func ignore_Example_Main() {
 	goMain([]string{})
-	// Output:
-	// Hello World
 }
 
 func _Test_Main(t *testing.T) {

@@ -1,0 +1,502 @@
+[
+  {
+    "code": "0",
+    "jp": "晴天",
+    "en": "Clear sky"
+  },
+  {
+    "code": "1",
+    "jp": "晴れ",
+    "en": "Few clouds"
+  },
+  {
+    "code": "2",
+    "jp": "薄曇り",
+    "en": "Partly cloudy"
+  },
+  {
+    "code": "3",
+    "jp": "曇り",
+    "en": "Cloudy"
+  },
+  {
+    "code": "4",
+    "jp": "煙霧",
+    "en": "Smoke"
+  },
+  {
+    "code": "5",
+    "jp": "煙霧",
+    "en": "Haze"
+  },
+  {
+    "code": "6",
+    "jp": "砂じん嵐",
+    "en": "Widespread dust"
+  },
+  {
+    "code": "7",
+    "jp": "砂じん嵐",
+    "en": "Dust or sand raised by wind"
+  },
+  {
+    "code": "8",
+    "jp": "砂じん嵐",
+    "en": "Well developed dust whirls or sand whirls"
+  },
+  {
+    "code": "9",
+    "jp": "砂じん嵐",
+    "en": "Duststorm or sandstorm"
+  },
+  {
+    "code": "10",
+    "jp": "霧",
+    "en": "Mist"
+  },
+  {
+    "code": "11",
+    "jp": "霧",
+    "en": "Patches of shallow fog or ice fog"
+  },
+  {
+    "code": "12",
+    "jp": "霧",
+    "en": "More or less continuous shallow fog or ice fog"
+  },
+  {
+    "code": "13",
+    "jp": "雷",
+    "en": "Lightning visible, no thunder heard"
+  },
+  {
+    "code": "14",
+    "jp": "霧雨",
+    "en": "Precipitation within sight, not reaching the ground"
+  },
+  {
+    "code": "15",
+    "jp": "霧雨",
+    "en": "Precipitation within sight, reaching the ground but distant"
+  },
+  {
+    "code": "16",
+    "jp": "霧雨",
+    "en": "Precipitation within sight, reaching the ground near the station"
+  },
+  {
+    "code": "17",
+    "jp": "雷",
+    "en": "Thunderstorm, no precipitation"
+  },
+  {
+    "code": "18",
+    "jp": "スコール",
+    "en": "Squalls"
+  },
+  {
+    "code": "19",
+    "jp": "竜巻雲",
+    "en": "Funnel cloud"
+  },
+  {
+    "code": "20",
+    "jp": "霧雨",
+    "en": "Drizzle"
+  },
+  {
+    "code": "21",
+    "jp": "雨",
+    "en": "Rain"
+  },
+  {
+    "code": "22",
+    "jp": "雪",
+    "en": "Snow"
+  },
+  {
+    "code": "23",
+    "jp": "雨雪",
+    "en": "Rain and snow or ice pellets"
+  },
+  {
+    "code": "24",
+    "jp": "着氷性霧雨",
+    "en": "Freezing drizzle or freezing rain"
+  },
+  {
+    "code": "25",
+    "jp": "にわか雨",
+    "en": "Shower(s) of rain"
+  },
+  {
+    "code": "26",
+    "jp": "にわか雪",
+    "en": "Shower(s) of snow or rain and snow"
+  },
+  {
+    "code": "27",
+    "jp": "にわかひょう",
+    "en": "Shower(s) of hail or rain and hail"
+  },
+  {
+    "code": "28",
+    "jp": "霧",
+    "en": "Fog or ice fog"
+  },
+  {
+    "code": "29",
+    "jp": "雷雨",
+    "en": "Thunderstorm"
+  },
+  {
+    "code": "30",
+    "jp": "砂じん嵐",
+    "en": "Slight or moderate duststorm or sandstorm (decreasing)"
+  },
+  {
+    "code": "31",
+    "jp": "砂じん嵐",
+    "en": "Slight or moderate duststorm or sandstorm (no change)"
+  },
+  {
+    "code": "32",
+    "jp": "砂じん嵐",
+    "en": "Slight or moderate duststorm or sandstorm (increasing)"
+  },
+  {
+    "code": "33",
+    "jp": "砂じん嵐",
+    "en": "Severe duststorm or sandstorm (decreasing)"
+  },
+  {
+    "code": "34",
+    "jp": "砂じん嵐",
+    "en": "Severe duststorm or sandstorm (no change)"
+  },
+  {
+    "code": "35",
+    "jp": "砂じん嵐",
+    "en": "Severe duststorm or sandstorm (increasing)"
+  },
+  {
+    "code": "36",
+    "jp": "地ふぶき",
+    "en": "Slight or moderate blowing snow (low)"
+  },
+  {
+    "code": "37",
+    "jp": "地ふぶき",
+    "en": "Heavy drifting snow (low)"
+  },
+  {
+    "code": "38",
+    "jp": "地ふぶき",
+    "en": "Slight or moderate blowing snow (high)"
+  },
+  {
+    "code": "39",
+    "jp": "地ふぶき",
+    "en": "Heavy drifting snow (high)"
+  },
+  {
+    "code": "40",
+    "jp": "霧",
+    "en": "Fog or ice fog (at a distance)"
+  },
+  {
+    "code": "41",
+    "jp": "霧",
+    "en": "Fog or ice fog in patches"
+  },
+  {
+    "code": "42",
+    "jp": "霧",
+    "en": "Fog or ice fog, sky visible becoming thinner"
+  },
+  {
+    "code": "43",
+    "jp": "霧",
+    "en": "Fog or ice fog, sky invisible becoming thinner"
+  },
+  {
+    "code": "44",
+    "jp": "霧",
+    "en": "Fog or ice fog, sky visible no change"
+  },
+  {
+    "code": "45",
+    "jp": "霧",
+    "en": "Fog or ice fog, sky invisible no change"
+  },
+  {
+    "code": "46",
+    "jp": "霧",
+    "en": "Fog or ice fog, sky visible becoming thicker"
+  },
+  {
+    "code": "47",
+    "jp": "霧",
+    "en": "Fog or ice fog, sky invisible becoming thicker"
+  },
+  {
+    "code": "48",
+    "jp": "凍霧",
+    "en": "Fog depositing rime, sky visible"
+  },
+  {
+    "code": "49",
+    "jp": "凍霧",
+    "en": "Fog depositing rime, sky invisible"
+  },
+  {
+    "code": "50",
+    "jp": "霧雨",
+    "en": "Drizzle, intermittent slight"
+  },
+  {
+    "code": "51",
+    "jp": "霧雨",
+    "en": "Drizzle, continuous slight"
+  },
+  {
+    "code": "52",
+    "jp": "霧雨",
+    "en": "Drizzle, intermittent moderate"
+  },
+  {
+    "code": "53",
+    "jp": "霧雨",
+    "en": "Drizzle, continuous moderate"
+  },
+  {
+    "code": "54",
+    "jp": "霧雨",
+    "en": "Drizzle, intermittent heavy (dense)"
+  },
+  {
+    "code": "55",
+    "jp": "霧雨",
+    "en": "Drizzle, continuous heavy (dense)"
+  },
+  {
+    "code": "56",
+    "jp": "みぞれ",
+    "en": "Freezing drizzle, slight"
+  },
+  {
+    "code": "57",
+    "jp": "みぞれ",
+    "en": "Freezing drizzle, moderate or heavy"
+  },
+  {
+    "code": "58",
+    "jp": "霧雨",
+    "en": "Drizzle and rain, slight"
+  },
+  {
+    "code": "59",
+    "jp": "霧雨",
+    "en": "Drizzle and rain, moderate or heavy"
+  },
+  {
+    "code": "60",
+    "jp": "雨: とても弱い",
+    "en": "Rain, intermittent slight"
+  },
+  {
+    "code": "61",
+    "jp": "雨: 弱い",
+    "en": "Rain: Slight intensity"
+  },
+  {
+    "code": "62",
+    "jp": "雨: 弱い",
+    "en": "Rain, intermittent moderate"
+  },
+  {
+    "code": "63",
+    "jp": "雨: 中程度",
+    "en": "Rain: Moderate intensity"
+  },
+  {
+    "code": "64",
+    "jp": "雨: 激しい",
+    "en": "Rain, intermittent heavy"
+  },
+  {
+    "code": "65",
+    "jp": "雨: 激しい",
+    "en": "Rain: Heavy intensity"
+  },
+  {
+    "code": "66",
+    "jp": "みぞれ",
+    "en": "Freezing rain, slight"
+  },
+  {
+    "code": "67",
+    "jp": "みぞれ",
+    "en": "Freezing rain, moderate or heavy"
+  },
+  {
+    "code": "68",
+    "jp": "みぞれ",
+    "en": "Rain, or drizzle and snow, slight"
+  },
+  {
+    "code": "69",
+    "jp": "みぞれ",
+    "en": "Rain, or drizzle and snow, moderate or heavy"
+  },
+  {
+    "code": "70",
+    "jp": "雪",
+    "en": "Intermittent fall of snow flakes slight"
+  },
+  {
+    "code": "71",
+    "jp": "雪",
+    "en": "Continuous fall of snow flakes slight"
+  },
+  {
+    "code": "72",
+    "jp": "雪",
+    "en": "Intermittent fall of snow flakes moderate"
+  },
+  {
+    "code": "73",
+    "jp": "雪",
+    "en": "Continuous fall of snow flakes moderate"
+  },
+  {
+    "code": "74",
+    "jp": "雪",
+    "en": "Intermittent fall of snow flakes heavy"
+  },
+  {
+    "code": "75",
+    "jp": "雪",
+    "en": "Continuous fall of snow flakes heavy"
+  },
+  {
+    "code": "76",
+    "jp": "ひょう",
+    "en": "Diamond dust (with or without fog)"
+  },
+  {
+    "code": "77",
+    "jp": "ひょう",
+    "en": "Snow grains"
+  },
+  {
+    "code": "78",
+    "jp": "氷晶",
+    "en": "Isolated star-like snow crystals"
+  },
+  {
+    "code": "79",
+    "jp": "雪",
+    "en": "Rain showers"
+  },
+  {
+    "code": "80",
+    "jp": "雪",
+    "en": "Snow showers"
+  },
+  {
+    "code": "81",
+    "jp": "雪",
+    "en": "Rain or snow showers, slight"
+  },
+  {
+    "code": "82",
+    "jp": "雪",
+    "en": "Rain or snow showers, moderate or heavy"
+  },
+  {
+    "code": "83",
+    "jp": "みぞれ",
+    "en": "Light showers of snow or rain and snow"
+  },
+  {
+    "code": "84",
+    "jp": "みぞれ",
+    "en": "Moderate or heavy showers of snow or rain and snow"
+  },
+  {
+    "code": "85",
+    "jp": "みぞれ",
+    "en": "Light showers of hail"
+  },
+  {
+    "code": "86",
+    "jp": "みぞれ",
+    "en": "Moderate or heavy showers of hail"
+  },
+  {
+    "code": "87",
+    "jp": "雨",
+    "en": "Showers of snow pellets"
+  },
+  {
+    "code": "88",
+    "jp": "みぞれ",
+    "en": "Light rain with snow"
+  },
+  {
+    "code": "89",
+    "jp": "みぞれ",
+    "en": "Moderate or heavy rain with snow"
+  },
+  {
+    "code": "90",
+    "jp": "霧",
+    "en": "Thunderstorm (without hail or rain)"
+  },
+  {
+    "code": "91",
+    "jp": "雷雨",
+    "en": "Thunderstorm (with hail)"
+  },
+  {
+    "code": "92",
+    "jp": "霧雨",
+    "en": "Lightning, not a thunderstorm"
+  },
+  {
+    "code": "93",
+    "jp": "雷",
+    "en": "Slight thunderstorm (no precipitation)"
+  },
+  {
+    "code": "94",
+    "jp": "雷雨",
+    "en": "Moderate or heavy thunderstorm (no hail)"
+  },
+  {
+    "code": "95",
+    "jp": "雷雨",
+    "en": "Moderate or heavy thunderstorm with hail"
+  },
+  {
+    "code": "96",
+    "jp": "雪",
+    "en": "Freezing rain"
+  },
+  {
+    "code": "97",
+    "jp": "雷",
+    "en": "Slight or moderate thunderstorm with rain and/or snow"
+  },
+  {
+    "code": "98",
+    "jp": "雷",
+    "en": "Slight or moderate thunderstorm with hail and/or rain and/or snow"
+  },
+  {
+    "code": "99",
+    "jp": "雷雨",
+    "en": "Slight or moderate thunderstorm with hail and/or rain and/or snow"
+  }
+]
