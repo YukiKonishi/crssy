@@ -73,7 +73,7 @@ func perform(opts *options, args []string) *CrssyError {
 	}
 	city, err := crssy.FindCity(args[0])
 	if err != nil {
-		return &CrssyError{statusCode: 1, message: err.Error()}
+		return &CrssyError{statusCode: 0, message: err.Error()}
 	}
 	// fmt.Println(city)
 	weathercode, err := crssy.ExpectWeather(city)
