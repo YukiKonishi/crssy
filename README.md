@@ -24,7 +24,7 @@ OPTIONS
 
 # インストール方法
 ```
-hogehoge
+brew install crssy
 ```
 # プロジェクトについて
 ## 開発者
