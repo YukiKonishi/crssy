@@ -29,6 +29,8 @@ type CrssyError struct {
 	message    string
 }
 
+var completions bool
+
 func (e *CrssyError) Error() string {
 	return e.message
 }
@@ -36,7 +38,7 @@ func (e *CrssyError) Error() string {
 // ヘルプメッセージ
 func helpMessage(args string) string {
 	return fmt.Sprintf(`%s [OPTIONS]
-	OPTIgitONS
+	OPTIONS
 		<LOCATION>   	引数に場所を指定をし，出力で指定した場所の天気を返す．
 		-v, --version 			バージョンを表示し，修了します.
 		-h, --help 			このメッセージを表示し，修了します.
@@ -61,6 +63,8 @@ func buildOptions(args []string) (*options, *flag.FlagSet) {
 	flags.BoolVarP(&opts.help, "help", "h", false, "このメッセージを表示し，修了します．")
 	flags.StringVarP(&opts.location, "location", "l", "", "引数に場所を指定をし，出力で指定した場所の天気を返す．")
 	flags.StringVarP(&opts.week, "week", "w", "", "出力で週の天気を返す(場所は京都)")
+	flags.BoolVarP(&completions, "generate-completions", "", false, "completionsを生成します.")
+	flags.MarkHidden("generate-completions")
 	return opts, flags
 }
 
@@ -94,7 +98,9 @@ func parseOptions(args []string) (*options, []string, *CrssyError) {
 		fmt.Println(versionString(args))
 		return nil, nil, &CrssyError{statusCode: 0, message: ""}
 	}
-
+	if completions {
+		GenerateCompletion(flags)
+	}
 	return opts, flags.Args(), nil
 }
 

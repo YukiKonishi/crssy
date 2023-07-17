@@ -1,10 +1,10 @@
 PACKAGE_LIST := $(shell go list ./...)
-VERSION := 0.1.8
+VERSION := 0.1.16
 NAME := crssy
 DIST := $(NAME)-$(VERSION)
 
-crssy: coverage.out cmd/crssy/main.go *.go
-	go build -o crssy cmd/crssy/main.go
+$(NAME): coverage.out
+	go build -o $(NAME) cmd/$(NAME)/main.go cmd/$(NAME)/generate_completion.go
 
 coverage.out:
 	go test -covermode=count \
@@ -18,7 +18,7 @@ docker: crssy
 # refer from https://pod.hatenablog.com/entry/2017/06/13/150342
 define _createDist
 	mkdir -p dist/$(1)_$(2)/$(DIST)
-	GOOS=$1 GOARCH=$2 go build -o dist/$(1)_$(2)/$(DIST)/$(NAME)$(3) cmd/$(NAME)/main.go
+	GOOS=$1 GOARCH=$2 go build -o dist/$(1)_$(2)/$(DIST)/$(NAME)$(3) cmd/$(NAME)/main.go cmd/$(NAME)/generate_completion.go
 	cp -r README.md LICENSE dist/$(1)_$(2)/$(DIST)
 #	cp -r docs/public dist/$(1)_$(2)/$(DIST)/docs
 	tar cfz dist/$(DIST)_$(1)_$(2).tar.gz -C dist/$(1)_$(2) $(DIST)
@@ -37,3 +37,4 @@ distclean: clean
 
 clean:
 	rm -f crssy coverage.out
+	rm -rf completions cmd/crssy/completions
